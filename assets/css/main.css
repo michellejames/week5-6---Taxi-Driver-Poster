@@ -1,0 +1,362 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 1. Main Layout ================================= */
+* {
+  box-sizing: border-box; }
+
+.background {
+  background-image: url(../img/background.png);
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.taxi {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 126%;
+  opacity: 0;
+  transform: translate(-50%,-100%);
+  animation-name: taxi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.gun-without-handle {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 55%;
+  height: 25%;
+  position: absolute;
+  top: 49.5%;
+  left: 50%;
+  transform: translate(-50%); 
+  animation-name: gun;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.gun-handle {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 6.6666666666667%;
+  height: 5.3571428571429%;
+  position: absolute;
+  top: 54.5%;
+  left: 50%;
+  transform:rotate(0deg);
+  animation-name: gun-handle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.letters {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 59.3333333333333%;
+  height: 6.1904761904762%;
+  text-align: center;
+  opacity: 0;
+  animation-name: titel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes taxi {
+  0% {
+    left: 126%;
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+    left: 50%;
+  }
+  30%{
+    opacity: 1;
+    left: 50%;
+  }
+  40% {
+    opacity: 1;
+    left: 70%;
+  }
+  50%{
+    opacity: 1;
+    left: 50%;
+  }
+  90%{
+    opacity: 1;
+    left: 50%;
+  }
+  100%{
+    opacity: 0;
+    left: -24%;
+  }
+}
+
+@keyframes gun {
+    0% {
+    left: 126%;
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  20%{
+    opacity: 1;
+    left: 50%;
+  }
+  30%{
+    opacity: 1;
+    left: 50%;
+  }
+  40% {
+    opacity: 1;
+    left: 50%;
+  }
+  50%{
+    opacity: 1;
+    left: 50%;
+  }
+  90%{
+    opacity: 1;
+    left: 50%;
+  }
+  100%{
+    opacity: 0;
+    left: -24%;
+  }
+}
+
+@keyframes gun-handle {
+  0% {
+    left: 126%;
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  20%{
+    opacity: 1;
+    transform: rotate(0deg);
+    left: 50%;
+  }
+  30%{
+    opacity: 1;
+    transform: rotate(0deg);
+    left: 50%;
+  }
+  50%{
+    opacity: 1;
+    transform: rotate(0deg);
+    left: 50%;
+  }
+  52%{
+    opacity: 1;
+    transform: rotate(0deg);
+    left: 50%;
+  }
+  53% {
+    opacity: 1;
+    left: 50%;
+    transform: rotate(-45deg) translate(51%);
+  }
+  60% {
+    opacity: 1;
+    left: 50%;
+    transform: rotate(0deg);
+  }
+  90%{
+    opacity: 1;
+    left: 50%;
+  }
+  100%{
+    opacity: 0;
+    left: -24%;
+  }
+}
+
+.bullet {
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  opacity: 0;
+  animation-name: bullet;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bullet {
+  0% {
+    left: 26%;
+    opacity: 0;
+  }
+  52%{
+    opacity: 0;
+    left: 26%
+  }
+  53% {
+    opacity: 1;
+    left: 26%;
+  }
+  60% {
+    opacity: 1;
+    left: -24%;
+  }
+  61%{
+    opacity: 0;
+    left: -24%;
+  }
+  100%{
+    opacity: 0;
+    left: -24%;
+  }
+}
+
+/*.beyonce {
+  width: 8%;
+  position: absolute;
+  top: 41%;
+  left: 48%;
+  opacity: 0;
+  transform: scale(1);
+  animation-name: beyonce;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes beyonce {
+    0% {
+    left:48%;
+    opacity:0;
+  }
+
+  54% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  58% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  65% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  70%{
+    transform: scale(1);
+    opacity: 0;
+  }
+  100%{
+    opacity:0;
+    left:48%;
+  }
+}*/
+
+
+@keyframes titel {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 1; 
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.blood-splash {
+  position: absolute;
+  width: 20%;
+  top: 60%;
+  left: 20%;
+  opacity: 0;
+  animation-name: blood-splash;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blood-splash {
+
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  88% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
