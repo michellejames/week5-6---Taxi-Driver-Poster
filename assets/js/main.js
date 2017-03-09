@@ -27,8 +27,7 @@ var createParticle = function() {
 	particle.style.width = "1px";
 	particle.style.height = "4px";
 	particle.style.transform = "rotate(-30deg)";
-
-	particle.style.backgroundColor = "white";
+	particle.style.overflow = "hidden";
 
 	var speed = Math.random () * 50 + 1;
 
@@ -39,6 +38,13 @@ var createParticle = function() {
 
 		styleLeft = styleLeft - ( speed * -0.1 );
 		styleTop = styleTop + speed;
+
+		if (styleTop > (window.innerHeight/2)) {
+	            particle.style.backgroundColor = "#0f1110";
+	        } else {
+	            particle.style.backgroundColor = "#f2b401";
+
+	    }
 
 		if ( styleTop > window.innerHeight) {
 			styleTop = -10;
